@@ -8,7 +8,7 @@ some customization.
 ```go
     import "github.com/danielrdong/logrotate"
 
-    log.SetOutput(&lumberjack.Logger{
+    log.SetOutput(&logrotate.Logger{
         Filename:   "xxx.log",
         MaxSize:    500,  // megabytes
         MaxBackups: 3,
